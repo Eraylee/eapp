@@ -1,0 +1,6 @@
+export * from './data-dictionary.controller'
+export * from './data-dictionary.dto'
+export * from './data-dictionary.dto'
+export * from './data-dictionary.entity'
+export * from './data-dictionary.module'
+export * from './data-dictionary.service'

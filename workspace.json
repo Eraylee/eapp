@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "client-api": "libs/client/api",
+    "client-assets": "libs/client/assets",
+    "client-common": "libs/client/common",
+    "client-components": "libs/client/components",
+    "client-hooks": "libs/client/hooks",
+    "client-pages": "libs/client/pages",
+    "client-service": "libs/client/service",
+    "client-utils": "libs/client/utils",
+    "gallery-api": "apps/gallery-api",
+    "gallery-client": "apps/gallery-client",
+    "gallery-client-e2e": "apps/gallery-client-e2e",
+    "server-core-base": "libs/server/core/base",
+    "server-core-casbin": "libs/server/core/casbin",
+    "server-core-filters": "libs/server/core/filters",
+    "server-core-guards": "libs/server/core/guards",
+    "server-core-interceptors": "libs/server/core/interceptors",
+    "server-core-system": "libs/server/core/system",
+    "server-core-utils": "libs/server/core/utils",
+    "types": "libs/types"
+  }
+}

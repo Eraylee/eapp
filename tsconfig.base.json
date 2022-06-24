@@ -1,0 +1,44 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@eapp/client/api": ["libs/client/api/src/index.ts"],
+      "@eapp/client/assets": ["libs/client/assets/src/index.ts"],
+      "@eapp/client/assets/*": ["libs/client/assets/src/*"],
+      "@eapp/client/common": ["libs/client/common/src/index.ts"],
+      "@eapp/client/components": ["libs/client/components/src/index.ts"],
+      "@eapp/client/hooks": ["libs/client/hooks/src/index.ts"],
+      "@eapp/client/pages": ["libs/client/pages/src/index.ts"],
+      "@eapp/client/pages/*": ["libs/client/pages/src/*"],
+      "@eapp/client/service": ["libs/client/service/src/index.ts"],
+      "@eapp/client/utils": ["libs/client/utils/src/index.ts"],
+      "@eapp/server-share-auth": ["libs/server/share/auth/src/index.ts"],
+      "@eapp/server/core/base": ["libs/server/core/base/src/index.ts"],
+      "@eapp/server/core/casbin": ["libs/server/core/casbin/src/index.ts"],
+      "@eapp/server/core/dto": ["libs/server/core/dto/src/index.ts"],
+      "@eapp/server/core/filters": ["libs/server/core/filters/src/index.ts"],
+      "@eapp/server/core/guards": ["libs/server/core/guards/src/index.ts"],
+      "@eapp/server/core/interceptors": [
+        "libs/server/core/interceptors/src/index.ts"
+      ],
+      "@eapp/server/core/system": ["libs/server/core/system/src/index.ts"],
+      "@eapp/server/core/utils": ["libs/server/core/utils/src/index.ts"],
+      "@eapp/types": ["libs/types/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
