@@ -39,7 +39,7 @@ export default () => {
           <TabsLayout />
           <Outlet />
         </Content>
-        <Footer style={{ textAlign: 'center' }}>实验室耗材管理系统</Footer>
+        <Footer style={{ textAlign: 'center' }}>VIA ERAYLEE</Footer>
       </Layout>
     </Layout>
   );

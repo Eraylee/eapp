@@ -49,7 +49,7 @@ const SiderLayout = ({ themeName }: SiderLayoutProps) => {
   return (
     <Card bordered={false} className="layout-sider" bodyStyle={{ padding: 0 }}>
       <div className="logo">
-        <p>实验室耗材管理系统</p>
+        <p>ERAYLEE</p>
       </div>
       <AMenu mode="inline" theme={themeName}>
         {menus.map((v) =>
