@@ -21,7 +21,7 @@
         ],
         "styles": [],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "apps/gallery-client/webpack.config.js"
       },
       "configurations": {
         "development": {

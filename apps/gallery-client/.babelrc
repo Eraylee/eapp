@@ -8,5 +8,14 @@
       }
     ]
   ],
-  "plugins": ["@emotion/babel-plugin"]
+  "plugins": [
+    "@emotion/babel-plugin",
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": "css"
+      }
+    ]
+  ]
 }

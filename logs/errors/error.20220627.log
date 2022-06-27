@@ -1,0 +1,80 @@
+{"date":"2022-06-27T14:53:50.755","level":"ERROR","category":"default","host":"cpec09435e305ca-cmc09435e305c8.cpe.net.cable.rogers.com","pid":"874","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/menu/getTree
+          Method: GET
+          Status：401
+          IP: ::ffff:127.0.0.1
+          res : {"statusCode":401,"message":"jwt expired","error":"Unauthorized"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-06-27T14:53:50.767","level":"ERROR","category":"default","host":"cpec09435e305ca-cmc09435e305c8.cpe.net.cable.rogers.com","pid":"874","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/menu/getTree
+          Method: GET
+          Status：401
+          IP: ::ffff:127.0.0.1
+          res : {"statusCode":401,"message":"jwt expired","error":"Unauthorized"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-06-27T14:53:51.513","level":"ERROR","category":"default","host":"cpec09435e305ca-cmc09435e305c8.cpe.net.cable.rogers.com","pid":"874","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/menu/getTree
+          Method: GET
+          Status：401
+          IP: ::ffff:127.0.0.1
+          res : {"statusCode":401,"message":"No auth token","error":"Unauthorized"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-06-27T14:53:51.521","level":"ERROR","category":"default","host":"cpec09435e305ca-cmc09435e305c8.cpe.net.cable.rogers.com","pid":"874","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/menu/getTree
+          Method: GET
+          Status：401
+          IP: ::ffff:127.0.0.1
+          res : {"statusCode":401,"message":"No auth token","error":"Unauthorized"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-06-27T16:56:39.174","level":"ERROR","category":"default","host":"cpec09435e305ca-cmc09435e305c8.cpe.net.cable.rogers.com","pid":"874","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/menu/getTree
+          Method: GET
+          Status：401
+          IP: ::ffff:127.0.0.1
+          res : {"statusCode":401,"message":"jwt expired","error":"Unauthorized"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-06-27T16:56:39.188","level":"ERROR","category":"default","host":"cpec09435e305ca-cmc09435e305c8.cpe.net.cable.rogers.com","pid":"874","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/menu/getTree
+          Method: GET
+          Status：401
+          IP: ::ffff:127.0.0.1
+          res : {"statusCode":401,"message":"jwt expired","error":"Unauthorized"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-06-27T16:56:39.525","level":"ERROR","category":"default","host":"cpec09435e305ca-cmc09435e305c8.cpe.net.cable.rogers.com","pid":"874","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/menu/getTree
+          Method: GET
+          Status：401
+          IP: ::ffff:127.0.0.1
+          res : {"statusCode":401,"message":"No auth token","error":"Unauthorized"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-06-27T16:56:39.533","level":"ERROR","category":"default","host":"cpec09435e305ca-cmc09435e305c8.cpe.net.cable.rogers.com","pid":"874","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/menu/getTree
+          Method: GET
+          Status：401
+          IP: ::ffff:127.0.0.1
+          res : {"statusCode":401,"message":"No auth token","error":"Unauthorized"}
+    -------------------------------------------------------------------
+  '}
