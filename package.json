@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nx serve gallery-api & nx serve gallery-client",
     "start": "nx serve",
+    "server": "nx serve gallery-api",
     "build": "nx build",
     "test": "nx test"
   },

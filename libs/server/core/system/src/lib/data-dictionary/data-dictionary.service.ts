@@ -2,7 +2,7 @@ import { Injectable, BadRequestException } from '@nestjs/common';
 import { BaseService } from '@eapp/server/core/base';
 import { DataDictionaryEntity } from './data-dictionary.entity';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository, TreeRepository } from 'typeorm';
+import { Repository, DataSource } from 'typeorm';
 import {
   CreateDataDictionaryDto,
   UpdateDataDictionaryDto,
@@ -13,8 +13,7 @@ export class DataDictionaryService extends BaseService<DataDictionaryEntity> {
   constructor(
     @InjectRepository(DataDictionaryEntity)
     readonly repo: Repository<DataDictionaryEntity>,
-    @InjectRepository(DataDictionaryEntity)
-    readonly treeRepo: TreeRepository<DataDictionaryEntity>
+    private dataSource: DataSource
   ) {
     super(repo);
   }
@@ -23,8 +22,11 @@ export class DataDictionaryService extends BaseService<DataDictionaryEntity> {
    * @param id
    */
   public async getById(id: number): Promise<DataDictionaryEntity> {
-    const dataDictionary = await this.treeRepo.findOneBy({ id });
-    const dataDictionaryWithParent = await this.treeRepo.findAncestorsTree(
+    const treeRepo = await this.dataSource.getTreeRepository(
+      DataDictionaryEntity
+    );
+    const dataDictionary = await treeRepo.findOneBy({ id });
+    const dataDictionaryWithParent = await treeRepo.findAncestorsTree(
       dataDictionary
     );
     return dataDictionaryWithParent;
@@ -33,8 +35,7 @@ export class DataDictionaryService extends BaseService<DataDictionaryEntity> {
    * 获取全部菜单树
    */
   public async getDataDictionaryTree(): Promise<DataDictionaryEntity[]> {
-    const tree = await this.treeRepo.findTrees();
-    return tree;
+    return this.dataSource.getTreeRepository(DataDictionaryEntity).findTrees();
   }
   /**
    * 新增字典

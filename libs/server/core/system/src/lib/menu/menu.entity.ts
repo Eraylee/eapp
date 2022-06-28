@@ -17,7 +17,7 @@ export enum MenuTypes {
 }
 
 @Entity('menu')
-@Tree('materialized-path')
+@Tree("materialized-path")
 export class MenuEntity extends BaseEntity {
   @Column({ type: 'varchar', length: 30, unique: true })
   name: string;

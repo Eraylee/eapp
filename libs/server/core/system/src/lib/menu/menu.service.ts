@@ -2,7 +2,7 @@ import { Injectable, BadRequestException } from '@nestjs/common';
 import { BaseService } from '@eapp/server/core/base';
 import { MenuEntity } from './menu.entity';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository, TreeRepository } from 'typeorm';
+import { Repository, DataSource } from 'typeorm';
 import { CreateMenuDto, UpdateMenuDto } from './menu.dto';
 import { JwtPayload } from '../auth';
 
@@ -10,7 +10,7 @@ import { JwtPayload } from '../auth';
 export class MenuService extends BaseService<MenuEntity> {
   constructor(
     @InjectRepository(MenuEntity) readonly repo: Repository<MenuEntity>,
-    @InjectRepository(MenuEntity) readonly treeRepo: TreeRepository<MenuEntity>
+    private dataSource: DataSource
   ) {
     super(repo);
   }
@@ -19,16 +19,17 @@ export class MenuService extends BaseService<MenuEntity> {
    * @param id
    */
   public async getById(id: number): Promise<MenuEntity> {
-    const menu = await this.treeRepo.findOneBy({ id });
-    const menuWithParent = await this.treeRepo.findAncestorsTree(menu);
+    const treeRepo = await this.dataSource.getTreeRepository(MenuEntity);
+    const menu = await treeRepo.findOneBy({ id });
+    const menuWithParent = await treeRepo.findAncestorsTree(menu);
     return menuWithParent;
   }
   /**
    * 获取全部菜单树
    */
   public async getMenuTree(): Promise<MenuEntity[]> {
-    const tree = await this.treeRepo.findTrees();
-    return tree;
+    // const tree = await this.treeRepo.findTrees();
+    return this.dataSource.getTreeRepository(MenuEntity).findTrees();
   }
 
   /**
