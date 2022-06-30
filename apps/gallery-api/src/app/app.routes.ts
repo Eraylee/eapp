@@ -7,6 +7,12 @@ import {
   MenuModule,
   DataDictionaryModule,
 } from '@eapp/server/core/system';
+import {
+  GallerymModule,
+  AlbumModule,
+  CategoryModule,
+  PhotoModule,
+} from './gallery';
 
 export const routes: Routes = [
   {
@@ -22,5 +28,14 @@ export const routes: Routes = [
   {
     path: '/auth',
     module: AuthModule,
+  },
+  {
+    path: '/gallery',
+    module: GallerymModule,
+    children: [
+      { path: '/album', module: AlbumModule },
+      { path: '/category', module: CategoryModule },
+      { path: '/photo', module: PhotoModule },
+    ],
   },
 ];

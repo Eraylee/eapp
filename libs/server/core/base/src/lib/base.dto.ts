@@ -72,4 +72,19 @@ export class UpdateDto extends CreateDto {
   @IsNotEmpty()
   @IsDefined()
   id: number;
+
+  @ApiProperty({
+    description: '排序',
+  })
+  sort: number;
+
+  @ApiProperty({
+    description: '状态',
+  })
+  status: Status;
+
+  @ApiProperty({
+    description: '描述',
+  })
+  description: string;
 }

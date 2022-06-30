@@ -7,6 +7,7 @@ import { routes } from './app.routes';
 import { SystemModule, AuthModule } from '@eapp/server/core/system';
 import { CasbinModule } from '@eapp/server/core/casbin';
 import { AppConfig, AuthConfig, DateBaseConfig } from '../configs';
+import { GallerymModule } from './gallery';
 // const ENV = process.env.NODE_ENV;
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { AppConfig, AuthConfig, DateBaseConfig } from '../configs';
     SystemModule,
     AuthModule,
     CasbinModule,
+    GallerymModule,
   ],
 })
 export class AppModule {}

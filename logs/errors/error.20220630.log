@@ -1,0 +1,30 @@
+{"date":"2022-06-30T17:58:50.298","level":"ERROR","category":"default","host":"cpe64777d5c6513-cm64777d5c6510.cpe.net.cable.rogers.com","pid":"18882","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /
+          Method: GET
+          Status：404
+          IP: ::1
+          res : {"statusCode":404,"message":"Cannot GET /","error":"Not Found"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-06-30T17:58:50.538","level":"ERROR","category":"default","host":"cpe64777d5c6513-cm64777d5c6510.cpe.net.cable.rogers.com","pid":"18882","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /apple-touch-icon-precomposed.png
+          Method: GET
+          Status：404
+          IP: ::1
+          res : {"statusCode":404,"message":"Cannot GET /apple-touch-icon-precomposed.png","error":"Not Found"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-06-30T17:58:50.549","level":"ERROR","category":"default","host":"cpe64777d5c6513-cm64777d5c6510.cpe.net.cable.rogers.com","pid":"18882","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /apple-touch-icon.png
+          Method: GET
+          Status：404
+          IP: ::1
+          res : {"statusCode":404,"message":"Cannot GET /apple-touch-icon.png","error":"Not Found"}
+    -------------------------------------------------------------------
+  '}
