@@ -28,7 +28,6 @@ export class AuthService {
       username: user.username,
       roles: user.roles.map((v) => v.code),
       nickname: user.nickname,
-      userNo: user.userNo,
     };
   }
 

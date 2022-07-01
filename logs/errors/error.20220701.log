@@ -98,3 +98,13 @@
           res : {"statusCode":400,"message":["userNo should not be empty"],"error":"Bad Request"}
     -------------------------------------------------------------------
   '}
+{"date":"2022-07-01T17:14:40.902","level":"ERROR","category":"default","host":"cpef0f249a16203-cmf0f249a16200.sdns.net.rogers.com","pid":"35567","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/user/create
+          Method: POST
+          Status：400
+          IP: ::1
+          res : {"statusCode":400,"message":["userNo should not be null or undefined"],"error":"Bad Request"}
+    -------------------------------------------------------------------
+  '}
