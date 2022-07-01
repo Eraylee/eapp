@@ -53,7 +53,7 @@ export class UserController {
    */
   @ApiOperation({ summary: '新增' })
   @Post('create')
-  @UseGuards(JwtAuthGuard, RoleGuard)
+  // @UseGuards(JwtAuthGuard, RoleGuard)
   create(@Body() params: CreateUserDto): Promise<UserEntity> {
     return this.service.createUser(params);
   }

@@ -9,9 +9,6 @@ export class UserEntity extends BaseEntity {
   @Column({ type: 'varchar', length: 30, comment: '昵称' })
   nickname: string;
 
-  @Column({ type: 'varchar', length: 30, unique: true, comment: '用户编号' })
-  userNo: string;
-
   @Column({
     type: 'varchar',
     length: 50,

@@ -29,12 +29,6 @@ export class QueryUserDto extends PaginationDto implements Partial<UserEntity> {
   phone: string;
 
   @ApiProperty({
-    description: '用户编号',
-    required: false,
-  })
-  userNo: string;
-
-  @ApiProperty({
     description: '邮箱',
     required: false,
   })
@@ -55,14 +49,6 @@ export class CreateUserDto implements Partial<UserEntity> {
   @IsNotEmpty()
   @IsDefined()
   nickname: string;
-
-  @ApiProperty({
-    description: '用户编号',
-    required: false,
-  })
-  @IsNotEmpty()
-  @IsDefined()
-  userNo: string;
 
   @ApiProperty({
     description: '手机号码',
@@ -112,14 +98,6 @@ export class UpdateUserDto implements Partial<UserEntity> {
   @IsNotEmpty()
   @IsDefined()
   phone: string;
-
-  @ApiProperty({
-    description: '用户编号',
-    required: false,
-  })
-  @IsNotEmpty()
-  @IsDefined()
-  userNo: string;
 
   @ApiProperty({
     description: '邮箱',
