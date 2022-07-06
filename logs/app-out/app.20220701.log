@@ -208,3 +208,33 @@
           res : {"statusCode":400,"message":["userNo should not be null or undefined"],"error":"Bad Request"}
     -------------------------------------------------------------------
   '}
+{"date":"2022-07-01T17:50:50.792","level":"INFO","category":"default","host":"cpef0f249a16203-cmf0f249a16200.sdns.net.rogers.com","pid":"36760","data":'logging.interceptor.ts(line: 36, column: 14): 
+ 
+        ------------------------------------------------------------------
+              Request url: /system/user/create
+              Method: POST
+              IP: ::1
+              Status：200
+              res : {"code":200,"data":{"nickname":"admin","phone":"15555555555","email":"eraylee@live.com","username":"管理员","password":"b946ccc987465afcda7e45b1715219711a13518d1f1663b8c53b848cb0143441","roles":[],"description":null,"deletedAt":null,"avatar":null,"id":1,"sort":0,"status":1,"createdAt":"2022-07-01T09:50:50.746Z","updatedAt":"2022-07-01T09:50:50.746Z"},"message":"成功"}
+        -------------------------------------------------------------------
+      '}
+{"date":"2022-07-01T17:53:45.653","level":"ERROR","category":"default","host":"cpef0f249a16203-cmf0f249a16200.sdns.net.rogers.com","pid":"36760","data":'http-exception.filter.ts(line: 40, column: 10): 
+ 
+    ------------------------------------------------------------------
+          Request url: /system/role/create
+          Method: POST
+          Status：401
+          IP: ::1
+          res : {"statusCode":401,"message":"No auth token","error":"Unauthorized"}
+    -------------------------------------------------------------------
+  '}
+{"date":"2022-07-01T17:58:06.818","level":"INFO","category":"default","host":"cpef0f249a16203-cmf0f249a16200.sdns.net.rogers.com","pid":"38749","data":'logging.interceptor.ts(line: 36, column: 14): 
+ 
+        ------------------------------------------------------------------
+              Request url: /system/role/create
+              Method: POST
+              IP: ::1
+              Status：200
+              res : {"code":200,"data":{"sort":0,"description":"系统管理员","name":"管理员","code":"AMDIN","menus":[],"deletedAt":null,"id":1,"status":1,"createdAt":"2022-07-01T09:58:06.779Z","updatedAt":"2022-07-01T09:58:06.779Z"},"message":"成功"}
+        -------------------------------------------------------------------
+      '}

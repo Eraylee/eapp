@@ -80,23 +80,17 @@ export class UpdateUserDto implements Partial<UserEntity> {
   @ApiProperty({
     description: '用户id',
   })
-  @IsNotEmpty()
-  @IsDefined()
   id: number;
 
   @ApiProperty({
     description: '昵称',
   })
-  @IsNotEmpty()
-  @IsDefined()
   nickname: string;
 
   @ApiProperty({
     description: '手机号码',
   })
   @IsPhoneNumber('CN')
-  @IsNotEmpty()
-  @IsDefined()
   phone: string;
 
   @ApiProperty({
