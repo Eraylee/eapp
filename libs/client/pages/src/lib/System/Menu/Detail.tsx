@@ -45,13 +45,14 @@ export const MenuDetail = ({
   }, [id, operateType, visible]);
 
   useEffect(() => {
-    form.setFieldsValue(formValue);
+    form.setFieldsValue({ ...formValue, parentId: formValue.parent?.id });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formValue]);
 
   const handleOk = async () => {
     try {
       const params = await form.validateFields();
+      console.log(params)
       const isSuccess = !!(await dispatch(
         menuServiceThunk.createOrUpdate(params, id)
       ));
@@ -121,7 +122,7 @@ export const MenuDetail = ({
         <Form.Item label="图标" name="icon">
           <Input placeholder="请输入" />
         </Form.Item>
-        <Form.Item label="父级菜单" name={['parent', 'id']}>
+        <Form.Item label="父级菜单" name='parentId'>
           <ETreeSelect placeholder="请输入" dataSource={menus} />
         </Form.Item>
         <Form.Item label="排序" name="sort">

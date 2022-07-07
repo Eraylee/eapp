@@ -79,7 +79,6 @@ const createOrUpdate =
       if (id) {
         const updateForvValue = produce(params, (p: Partial<Menu>) => {
           p.id = id;
-          p.parentId = p.parent?.id;
         });
         await apiSystemMenuUpdate(updateForvValue);
       } else {
